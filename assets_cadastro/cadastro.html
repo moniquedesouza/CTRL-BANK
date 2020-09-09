@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro CTRL</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="assets_cadastro/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="assets_cadastro/vendor/jquery/jquery.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets_cadastro/css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="assets_cadastro/images/form-img.jpg" alt="">
+                    <!--<div class="signup-img-content">
+                        <h2>Conta CTRL</h2>
+                        <p>O melhor banco digital.</p>
+                    </div>-->
+                </div>
+               <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="first_name" class="required">Nome Completo</label>
+                                    <input type="text" name="nome_completo" id="first_name" placeholder="Nome Completo"/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="data_nasc" class="required">Data de Nascimento</label>
+                                    <input type="date" name="data_nasc" id="data_nasc" />
+                                </div>
+                                <div class="form-input">
+                                   <label for="cpf" class="required">CPF</label>
+                                    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" />
+                                </div>
+
+                                    <div class="form-input">
+                                    <label for="rg" class="required">RG</label>
+                                    <input type="text" name="rg" id="rg" placeholder="00.000.000-0" />
+                                </div>
+
+                                <div class="form-input">
+                                    <label for="email" class="required">Email</label>
+                                    <input type="text" name="email" id="email" placeholder="xxx@xxxx.xxx" />
+                                </div>
+                                <div class="form-input">
+                                     <label for="telefone_celular" class="required">Telefone Celular</label>
+                                    <input type="text" name="telefone_celular" id="telefone_celular" placeholder="(  ) 0000 - 0000"  />
+                                </div>
+                            </div>    
+                            <div class="form-group">
+                                <div class="form-select">
+                                    <div class="form-input">
+                                    <label for="telefone_residencial" class="required">Telefone Residencial</label>
+                                    <input type="text" name="telefone_residencial" id="telefone_residencial" placeholder="(  ) 0000 - 0000" />
+                                </div>
+                                    <div class="label-flex">
+                                       <label for="estado" class="required">Estado</label>
+                                        <!--<a href="#" class="form-link">Lunch detail</a>-->
+                                    </div>
+                                    <div class="select-list">
+                                            <select name="estado" id="meal_preference">
+                                            <option value="#">Selecione o estado</option>   
+                                            <option value="Acre"> Acre (AC)</option>
+                                            <option value="Alagoas">Alagoas (AL)</option>
+                                            <option value="Amapa">Amapá (AP)</option>
+
+                                            <option value="Amazonas"> Amazonas (AM)  </option>
+                                            <option value="Bahia">Bahia (BA)</option>
+                                            <option value="Ceara">Ceará (CE)</option>
+
+                                            <option value="Distrito Federal"> Distrito Federal (DF)</option>
+                                            <option value="Espirito Santo">Espírito Santo (ES)</option>
+                                            <option value="Goiás">Goiás (GO)</option>
+
+                                            <option value="Maranhao"> Maranhão (MA)</option>
+                                            <option value="Mato Grosso">Mato Grosso (MT)</option>
+                                            <option value="Mato Grosso do Sul">Mato Grosso do Sul (MS)</option>
+
+                                            <option value="Minas Gerais">Minas Gerais (MG)</option>
+                                            <option value="Para">Pará (PA) </option>
+                                            <option value="Paraiba">Paraíba (PB)</option>
+
+                                            <option value="Parana"> Paraná (PR)</option>
+                                            <option value="Pernambuco">Pernambuco (PE)</option>
+                                            <option value="Piaui">Piauí (PI)</option>
+
+                                            <option value="Rio de Janeiro "> Rio de Janeiro (RJ)</option>
+                                            <option value="Rio Grande do Norte">Rio Grande do Norte (RN)</option>
+                                            <option value="Rio Grande do Sul">Rio Grande do Sul (RS)</option>
+
+                                            <option value="Rondoia"> Rondônia (RO)</option>
+                                            <option value="Roraima">Roraima (RR)</option>
+                                            <option value="Santa Catarina">Santa Catarina (SC)</option>
+
+                                            <option value="Sao Paulo ">São Paulo (SP)</option>
+                                            <option value="Sergipe">Sergipe (SE)</option>
+                                            <option value="Tocantins">Tocantins (TO)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-input" >
+                                    <label for="cidade" class="required">Cidade</label>
+                                    <input type="text" name="cidade" id="cidade" placeholder="Cidade" />
+                                </div>
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="payment" class="required">Estado Civil</label>
+                                        <!--<a href="#" class="form-link">Payment Detail</a>-->
+                                    </div>
+                                    <div class="form-radio-group">            
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="payment" id="casado" checked>
+                                            <label for="casado">Casado(a)</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="payment" id="solteiro">
+                                            <label for="solteiro">Solteiro(a)</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="payment" id="viuvo">
+                                            <label for="viuvo">Viúvo(a)</label>
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-input">
+                                  <label for="endereco" class="required">Endereço</label>
+                                    <input type="text" name="endereco" id="endereco" placeholder="Endereço"/>
+                                </div>
+                                <div class="form-input">
+                                      <label for="cep" class="required">CEP</label>
+                                    <input type="text" name="cep" id="cep" placeholder="00000 - 000" />
+                                </div>
+                                <!--<div class="form-input">
+                                    <label for="n" class="required">Número da sua Casa</label>
+                                    <input type="text" name="n" id="n" placeholder="00000" />
+                                </div>-->
+                            </div>
+                        </div>
+                        <!--<div class="donate-us">
+                            <label>Donate us</label>
+                            <div class="price_slider ui-slider ui-slider-horizontal">
+                                <div id="slider-margin"></div>
+                                <span class="donate-value" id="value-lower"></span>
+                            </div>
+                        </div>-->
+                        <div class="form-submit">
+                            <input type="submit" value="Enviar" class="submit" id="submit" name="submit"/>
+                            <input type="submit" value="Cancelar" class="submit" id="reset" name="reset" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
